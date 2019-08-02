@@ -1,0 +1,44 @@
+#Example Program 1: Program in python using if else which take a list of first 100 number and print all the even number
+
+even=[]
+odd=[]
+for i in range(1,101):
+  if i%2==0:
+    even.append(i)
+  else:
+    odd.append(i)
+print("list of even numbers are:" ,even )
+print("list of odd numbers are:" ,odd)
+
+# EXAMPLE PROGRAM 2 :print all the prime number available in the list
+
+prime=[23,45,6,7,8,4] 
+print("the prime numbers in the list are:")
+for i in prime:
+  for k in range(2,i):
+    if i%k==0:
+     break
+  else:
+    print(i)
+    
+    
+#EXAMPLE PROGRAM 3: input number from the user and check whether that number is even/odd/prime
+
+num=int(input("enter the number"))
+
+if (num%2) == 0:
+  print (num, "is an even number")
+
+else:
+  print (num, "is an odd number")
+  
+if num>2:
+  for i in range(2,num):
+    if num%i==0:
+     break
+  else:
+    print("it is a prime number")
+
+else:
+  print("please enter a valid number")
+  
